@@ -30,6 +30,14 @@ var limitScale=function(){
 	//	foot.style.position="relative";
 	//}
 }
+
+var setmargin = function () {
+	var circle = document.getElementsByClassName("w-circle");
+	var bodywidth=document.body.clientWidth;
+	circle[0].style.left = (bodywidth-230)/2+"px";
+
+}
 window.onload=function(){
+	setmargin();
 	limitScale();
 }

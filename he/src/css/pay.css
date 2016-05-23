@@ -3,6 +3,8 @@ body {
 }
 .h-unknown-pay-header {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px 15px;
   height: 40px;
@@ -20,13 +22,19 @@ body {
 }
 .h-unknown-pay-header div {
   -webkit-box-flex: 1;
-          flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
   line-height: 40px;
   -webkit-box-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
+  -ms-grid-row-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .h-unknown-pay-art {
   margin: 15px 15px 0;
@@ -43,6 +51,8 @@ body {
 .h-unknown-pay-sec1,
 .h-unknown-pay-sec2 {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   margin: 0px 15px;
   padding: 15px 0 15px 0;
@@ -51,7 +61,9 @@ body {
 .h-unknown-pay-sec1 > div,
 .h-unknown-pay-sec2 > div {
   -webkit-box-flex: 1;
-          flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 .h-unknown-pay-sec1 > div:nth-child(1),
 .h-unknown-pay-sec2 > div:nth-child(1) {
@@ -67,17 +79,23 @@ body {
 .h-unknown-pay-sec2 > div:nth-child(1) {
   text-align: left;
   -webkit-box-flex: 1;
-          flex: 1;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
 }
 .h-unknown-pay-sec2 > div:nth-child(2) {
   text-align: right;
   -webkit-box-flex: 2;
-          flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
 }
 .h-unknown-pay-sec2 > div:nth-child(3) {
   text-align: right;
   -webkit-box-flex: 0.3;
-          flex: 0.3;
+  -webkit-flex: 0.3;
+  -ms-flex: 0.3;
+  flex: 0.3;
 }
 .h-unknown-pay-sec2 > div:nth-child(3) img {
   height: 30px;
@@ -87,10 +105,14 @@ body {
   height: 20px;
   line-height: 20px;
   -webkit-box-pack: center;
-          justify-content: center;
+  -webkit-justify-content: center;
+  -ms-flex-pack: center;
+  justify-content: center;
   -webkit-box-align: center;
-              -ms-grid-row-align: center;
-          align-items: center;
+  -ms-grid-row-align: center;
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
 }
 .h-unknown-pay-sec3 {
   margin: 5px 15px;
@@ -141,12 +163,18 @@ body {
 }
 .h-unknown-Cpay-1 li {
   width: 48%;
-  height: 40px;
-  margin-bottom: 5px;
-  line-height: 40px;
+  height: 50px;
+  min-height: 50px;
+  max-height: 50px;
+  margin-top: 5px;
+  /*margin-bottom: 5px;*/
+  line-height: 50px;
   text-align: center;
+  font-size: 14px;
   border: 1px solid #ddd;
   border-radius: 5px;
+  background: url("../img/zhekou.png") no-repeat 100% 0%;
+  background-size: 35px 35px;
 }
 .h-unknown-Cpay-1 li span {
   font-size: 14px;
@@ -164,31 +192,40 @@ body {
 }
 .h-unknown-Cpay-input {
   display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   height: 40px;
-  margin: 15px 15px;
+  margin:  15px;
+  /*padding: 0 15px;*/
   line-height: 30px;
   border: 1px solid #ddd;
   border-radius: 5px;
 }
 .h-unknown-Cpay-input div {
   height: 40px;
+  /*padding: 0 15px;*/
   line-height: 40px;
 }
 .h-unknown-Cpay-input div:nth-child(1) {
-  -webkit-box-flex: 1.5;
-          flex: 1.5;
+  -webkit-box-flex: 2;
+  -webkit-flex: 2;
+  -ms-flex: 2;
+  flex: 2;
+
 }
 .h-unknown-Cpay-input div:nth-child(1) input[type="tel"] {
   width: 100%;
   height: 40px;
-  margin: 0 5px;
+  padding-left: 15px;
   border: none;
 }
 .h-unknown-Cpay-input div:nth-child(2) {
   -webkit-box-flex: 1;
-          flex: 1;
-  margin: 0 5px;
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding-right: 5px;
 }
 .h-unknown-Cpay-input div:nth-child(2) > i {
   display: block;
@@ -199,17 +236,35 @@ body {
   color: #fff;
   line-height: 19px;
   text-align: center;
-  background: #000;
+  background: #bdbdbd;
   border-radius: 100%;
 }
 .h-unknown-Cpay-input div:nth-child(3) {
   -webkit-box-flex: 0.4;
-          flex: 0.4;
+  -webkit-flex: 0.4;
+  -ms-flex: 0.4;
+  flex: 0.4;
   text-align: center;
   border-left: 1px solid #ddd;
 }
 .h-unknown-Cpay-input div:nth-child(3) img {
   width: 30px;
   height: 30px;
+  line-height: 30px;
   margin: 5px auto;
+}
+
+.arrow-up {
+  position: relative;
+  /*width: 26px;*/
+  /*height: 10px;*/
+  top: -62px;
+  right: -43%;
+  color: #FFFFFF;
+  font-size: 10px !important;
+  transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+  clear: both;
 }

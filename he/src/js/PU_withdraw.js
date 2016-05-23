@@ -12,7 +12,8 @@ var pswH = $('#keyboard').height();
 function setPassword(obj) {
     if (obj.getAttribute("data-inputable")) {
         var kb = document.getElementById("keyboard");
-        $('.h-PU-show').css("top",(window.screen.height-showH-pswH)/2+"px");
+        var dotop = (document.body.clientHeight-showH-pswH)/2 >=0 ? (document.body.clientHeight-showH-pswH)/2: 5;
+        $('.h-PU-show').css("top",dotop+"px");
         kb.style.bottom = 0;
         for (var i = 0; i < kb.getElementsByTagName("td").length; i++) {
             kb.getElementsByTagName("td")[i].addEventListener("touchstart", set);

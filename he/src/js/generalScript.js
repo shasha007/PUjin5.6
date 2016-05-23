@@ -1,21 +1,26 @@
-URL=""
 //上传身份证
-function uploadID(obj){
-	var dom=document.getElementById("idArea");
-	var file=obj.files[0];
-	console.log(file)
-	if(!/image\/\w+/.test(file.type)){
-		alert("请确保文件为图像类型");
-	    return false;
-	}
-	var read=new FileReader();
-	read.readAsDataURL(file);
-	read.onload=function(e){
-		var img=document.createElement("img");
-		img.src=this.result;
-		dom.innerHTML="";
-		dom.appendChild(img);
-	}
+function uploadID(){
+	var docObj=document.getElementById("doc");  
+    var imgObjPreview=document.getElementById("preview");  
+    if(docObj.files && docObj.files[0]){  
+        imgObjPreview.src = window.URL.createObjectURL(docObj.files[0]);  
+    }else{
+        //IE下，使用滤镜  
+        docObj.select();  
+        var imgSrc = document.selection.createRange().text;  
+        var localImagId = document.getElementById("idArea");  
+        //图片异常的捕捉，防止用户修改后缀来伪造图片  
+        try{  
+            localImagId.style.filter="progid:DXImageTransform.Microsoft.AlphaImageLoader(sizingMethod=scale)";  
+            localImagId.filters.item("DXImageTransform.Microsoft.AlphaImageLoader").src = imgSrc;  
+        }catch(e){  
+            alert("您上传的图片格式不正确，请重新选择!");  
+            return false;  
+        }  
+        imgObjPreview.style.display = 'none';  
+        document.selection.empty();  
+    }  
+    return true;
 }
 //设置密码
 //如果点击的是确认密码则无法弹出输入框

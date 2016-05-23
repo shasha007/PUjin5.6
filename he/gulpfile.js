@@ -108,7 +108,8 @@ gulp.task('cssfix', function () {
                  cascade: true, //是否美化属性值 默认：true
                  remove: true //是否去掉不必要的前缀 默认：true
              }))
-        .pipe(gulp.dest('dist/css'));
+        //.pipe(gulp.dest('dist/css'));
+             .pipe(gulp.dest('src/css2'));
 });
 
 //给所有html中引入的文件添加版本号
