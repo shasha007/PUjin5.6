@@ -139,3 +139,35 @@ function autofocus(){
 	}
 }
 autofocus();
+//选择月贷日贷
+function loanStyle(){
+	var load=document.getElementById("loan");
+	var ltype=document.getElementById("loanType");
+	if(load.selectedIndex==0){
+		var s=document.createElement("select");
+		for(var i=1;i<=12;i++){
+			var op=document.createElement("option");
+			op.innerText=i;
+			s.appendChild(op);
+		}
+		ltype.appendChild(s);
+	}
+	load.addEventListener("change",function(){
+		ltype.innerHTML="";
+		if(load.selectedIndex==0){
+			var s=document.createElement("select");
+			for(var i=1;i<=12;i++){
+				var op=document.createElement("option");
+				op.innerText=i;
+				s.appendChild(op);
+			}
+			ltype.appendChild(s);
+		}
+		else{
+			var ip=document.createElement("input");
+			ip.type="text";
+			ltype.appendChild(ip);
+		}
+	});
+}
+loanStyle();

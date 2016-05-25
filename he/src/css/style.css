@@ -1363,17 +1363,17 @@
 
 @media only screen and (max-width: 350px) {
     .h-trafficH,.h-trafficU{
-        font-size: 13px;
+        font-size: 12px;
     }
 }
 @media only screen and (min-width: 351px) and (max-width: 380px)  {
     .h-trafficH,.h-trafficU{
-        font-size: 14px;
+        font-size: 13px;
     }
 }
 @media only screen and (min-width: 381px) {
     .h-trafficH,.h-trafficU{
-        font-size: 15px;
+        font-size: 14px;
     }
 }
 .h-trafficH div{
@@ -1405,6 +1405,9 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    height: 40px;
+    line-height: 40px;
+    overflow: hidden;
 }
 
 
@@ -2318,7 +2321,24 @@ img + .w-segment {
     border: 1px solid #F3F1EE;
     outline: none;
 }
+.w-loan{
+	border: none;
+	padding: 5px 0;
+	font-size: 15px;
 
+}
+.w-selType{
+	width: 75% !important;
+	height:37px;
+	float: right;
+}
+.w-selType select{
+	width: 100%;
+	padding: 5px 0 !important;
+	font-size: 15px;
+	border: none;
+}
+.w-selType input{width: 99% !important;}
 .w-borrowing .w-simulate, .w-bind .w-simulate {
     width: 75%;
     height: 37px;
@@ -2620,8 +2640,7 @@ img + .w-segment {
     padding: 15px 0;
     -moz-box-flex: 1;
     -webkit-box-flex: 1;
-    display: block;
-    text-align: center;
+    display: block;    text-align: center;
     background: #fff;
     width: 33.3%;
     font-size: 18px;
@@ -3718,4 +3737,205 @@ i, em {
 .bank-13 img {
     border-radius: 0 !important;
 }
-
+/*创业基金申请*/
+.L-applyCommen{
+	width: 90%;
+    padding: 10px 5%;
+    background: #fff;
+    overflow: hidden;
+}
+.L-activity{
+    width: 22%;
+    line-height: 39px;
+    float: left;
+    font-size: 14px;
+}
+.L-activityName{
+	width: 76%;
+    height: 37px;
+    float: right;
+    position: relative;
+    color: #888;
+    line-height: 37px;
+    text-align: right;
+}
+#L-strong{
+    font-weight: 100;
+    font-size: 14px;
+    /*line-height: 39px;*/
+    float: left;
+    /*padding-right: 5%;*/
+    width: 95%;
+    text-overflow: ellipsis;
+    overflow: hidden;
+	white-space: nowrap;
+}
+#L-strong2{
+	font-size: 14px;
+	padding-right: 5%;
+}
+.L-activityName select {
+    width: 100%;
+    position: absolute;
+    top: 10px;
+    left: 0;
+    opacity: 0;
+}
+.L-activityName select{
+	color: #ea5504;
+}
+.L-up{
+	margin-right: -5%;
+	line-height: 40px;
+	padding-right: 5%;
+}
+.L-fill-must{
+	color: #ea5504;
+}
+.L-applyActivity input{
+	border: none;
+	font-size: 14px;
+}
+.L-applyActivity{
+	font-size: 14px;
+}
+.L-panner{
+	width: 90%;
+    padding: 10px 5%;
+    overflow: hidden;
+}
+.L-pannerCommen{
+  	background: #fff;
+  	display: block;
+  	font-size: 14px;
+    overflow: hidden;
+}
+#L-fill-pannerName{
+	padding: 10px 5%;
+	float: left;
+	width: 25%;
+}
+#L-fill-pannerTel{
+	padding: 10px 5%;
+	float: right;
+	width: 45%;
+}
+.L-pannerCommen input{
+	border: none;
+	font-size: 14px;
+}
+.L-pannerCommen a{
+	font-size: 14px;
+	color: #ea5504;
+}
+.L-pannerCommen p:nth-child(1){
+	padding: 10px 5%;
+}
+.L-pannerCommen p:nth-child(4){
+	padding: 10px 5%;
+}
+.L-pa{
+	padding: 10px 5%;
+}
+.L-pannerCommen p:nth-child(5){
+	padding: 10px 5%;
+}
+.L-pannerCommen p:nth-child(6){
+	padding: 1px 5% 10px 5%;
+}
+.L-blank{
+	margin-top: 2%;
+	width: 100%;
+	background-color: #F3F1EE;
+}
+.L-applySum input{
+	border: none;
+	font-size: 14px;
+}
+.L-fill-email{
+	color: #adadad;
+}
+.L-fill-emailContent{
+	color: #adadad;
+}
+.L-pannerCommen button{
+	padding: 3% 35% 3% 35%;
+	margin-left: 5%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #ea5504;
+	color: #ffffff;
+	border: none;
+	font-size: 14px;
+}
+.L-aplly{
+	margin-top: 2%;
+	width: 90%;
+    padding: 10px 5%;
+    background: #fff;
+    overflow: hidden;
+}
+.L-applyActivity button{
+	padding: 4% 40% 4% 40%;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: #ea5504;
+	color: #ffffff;
+	border: none;
+	font-size: 14px;
+}
+.L-applyActivity p{
+	line-height: 25px;
+}
+.L-activiP{
+	position:relative;
+	width: 76%;
+	float: right;
+	line-height: 39px;
+}
+.L-activSpan{
+	margin-left:76%; 
+	width:15%;
+	overflow:hidden;
+	font-size: 14px;
+}
+.L-activiP select{
+	width:100%;
+	margin-left: -76%;
+	opacity: 0;
+	font-size: 14px;
+}
+.L-activiP option{
+	color: #ea5504;
+}
+/*申请活动基金*/
+.L-upActivity{
+	float: right;
+	margin-right: -5%;
+	padding-right: 5px;
+	line-height: 40px;
+	color: #adadad;
+}
+/*基金规则*/
+.L-ruleTitle{
+	width: 90%;
+	font-size: 14px;
+	padding-top: 5%;
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.L-ruleContent{
+	width: 90%;
+	padding-left: 2%;
+	line-height: 25px;
+	font-size: 12px;
+	color: #adadad;
+}
+.L-footer-rule{
+	width: 90%;
+	padding-left: 2%;
+	padding-bottom: 2%;
+	font-size: 12px;
+	color: #adadad;
+	line-height: 25px;
+}
