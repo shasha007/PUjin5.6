@@ -23,7 +23,8 @@
 <div class="h-detail-header">
     <p>余额</p>
     <p class="h-bigred">560.00</p>
-    <div class="h-detail-fix">明细</div>
+    <div class="h-detail-fix">
+        <a>明细</a></div>
 
 </div>
 
@@ -62,7 +63,9 @@
         <!--</ul>-->
     <!--</div>-->
 </div>
+<a>
 <div class="h-DLiu">
+
 <div>
     买流量
 </div>
@@ -70,7 +73,9 @@
         <img class="h-DLiu-img" src="img/liuZuo.png">
 
     </div>
+
 </div>
+</a>
 <footer class="h-detail-foot">
     <div class="h-detail-btn clearfix">
         <div>
@@ -84,4 +89,9 @@
 </body>
 <script src="bower_components/jquery/dist/jquery.js" defer></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.min.js" defer></script>
+<script>
+    if (typeof(Android) == "undefined") {
+        document.getElementsByClassName("h-DLiu")[0].style.display="none";
+    }
+</script>
 </html>

@@ -129,17 +129,17 @@ body {
 }
 .h-unknown-pay-footer button {
   width: 100%;
-  height: 30px;
+  height: 50px;
   background: #ea5504;
   color: #fff;
   font-size: 18px;
-  line-height: 30px;
+  line-height: 50px;
   border: none;
-  border-radius: 5px;
+  border-radius: 10px;
 }
-.h-unknown-Cpay-header {
-  margin: 15px;
-}
+/*.h-unknown-Cpay-header {*/
+  /*margin: 15px;*/
+/*}*/
 .h-unknown-Cpay-header img {
   width: 100%;
 }

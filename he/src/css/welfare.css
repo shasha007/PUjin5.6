@@ -9,6 +9,9 @@ header{
 header img{
     width: 100%;
 }
+.name{
+    padding: 0!important;
+}
 .title{
     position: relative;
     top:20px;
@@ -44,7 +47,7 @@ p{
     line-height: 150%;
 }
 .info{
-    color: #a4a4a4;
+    color: #999;
 }
 .ps{
     font-size: 14px !important;
@@ -76,4 +79,12 @@ footer button{
 footer button:focus{
     border: none;
     outline:none;
+}
+.aname{
+    padding: 2px 0;
+}
+
+.ainfo{
+    color: #999;
+    padding:0 !important;
 }
