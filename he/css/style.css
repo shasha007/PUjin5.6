@@ -58,12 +58,15 @@
     border-bottom: 1px solid #f3f1ee;
 }
 
+
 .h-fqsc-con {
     border-bottom: 1px solid #f3f1ee;
 }
 
+
+
 .h-fqsc-con div {
-    height: 83px;
+    height: 90px;
     margin: 8px auto;
     overflow: hidden;
 }
@@ -367,7 +370,7 @@
     /*width: 100%;*/
     height: 45px;
     padding: 0 15px;
-    margin: 10px 15px 60px;
+    margin: 15px 15px 75px;
     line-height: 40px;
     color: #888;
     text-align: center;
@@ -535,7 +538,7 @@
 }
 
 .h-withdraw-input {
-    width: 88%;
+    width: 80%;
     height: 40px;
     /*float: left;*/
     line-height: 40px;
@@ -553,7 +556,7 @@
 .h-withdraw footer span {
     height: 40px;
     line-height: 40px;
-    font-size: 18px;
+    /*font-size: 18px;*/
 }
 
 .h-withdraw-tips {
@@ -1066,6 +1069,9 @@
     padding-right: 15px;
 
 }
+.h_DliuCover{
+    margin-bottom: 65px;
+}
 .h-DLiu-img{
     width: 12px;
     margin: 13px 0;
@@ -1075,6 +1081,7 @@
     position: fixed;
     width: 100%;
     bottom:0;
+    left: 0;
 }
 .h-detail-btn {
     display: -webkit-box;
@@ -1571,11 +1578,13 @@
 }
 
 .h_SelectSchool li {
+    width: 90%;
     margin: 0 15px;
     height: 40px;
     color: #888;
     line-height: 40px;
     border-bottom: 1px solid #f2f1ee;
+    overflow: hidden;
 }
 
 .h_LogFlag {
@@ -1598,6 +1607,7 @@
     top: 30px;
     width: 15px;
     text-align: center;
+    -webkit-transform: translate3d(0, 0, 0);
 }
 
 .h_LogIn {
@@ -1615,20 +1625,6 @@
     border-radius: 0;
     border-bottom: 1px solid #f2f1ee;
 }
-
-.h_LogInBtn  {
-    position: absolute;
-    bottom: 10%;
-    left: 10%;
-    width: 80%;
-    height: 40px;
-    line-height: 40px;
-    background-color: #ea5504;
-    color: #fff;
-    font-size: 18px;
-    border: none;
-    border-radius: 20px;
-}
 .h_InstallBtn{
     width: 80%;
     height: 40px;
@@ -1642,8 +1638,8 @@
 }
 .section  {
     height: 100%;
-    max-height: 100%;
-    min-height: 100%;
+    /*max-height: 100%;*/
+    /*min-height: 100%;*/
 }
 .h_LogSection1 {
     background-color: #f2f1ee;
@@ -1659,8 +1655,36 @@
     margin-top: 10%;
     color: #888;
 }
+@media only screen and (min-width: 300px) and (max-width: 350px){
+  .h_LogInFoot p{
+      font-size: 12px;
+  }
+}
+@media only screen and (min-width: 351px) and (max-width: 375px){
+    .h_LogInFoot p{
+        font-size: 14px;
+    }
+}
+@media only screen and (min-width: 376px){
+    .h_LogInFoot p{
+        font-size: 16px;
+    }
+}
+.h_LogInBtn  {
+    width: 80%;
+    height: 40px;
+    margin-top: 10%;
+    line-height: 40px;
+    background-color: #ea5504;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    border-radius: 20px;
+    -webkit-transform: translate3d(0, 0, 0);
+}
 .h_LogArrow{
-    position: absolute;
+    position: fixed;
+    /*top:100px;*/
     bottom: 0px;
     left: 45%;
     width: 10%;
@@ -1687,6 +1711,35 @@
         bottom: 5px;
         opacity: 1;
     }
+}
+
+/*提现订单*/
+.h_WiOdDate{
+    font-size: 14px;
+    color: #888;
+}
+.h_WiOdFlag{
+    height: 70px!important;
+}
+
+.h-_WiOd div {
+    width: 20%!important;
+    height: 32px;
+    float: left;
+    line-height: 32px;
+    text-align: center;
+    border-top: 1px solid #efefef;
+    border-right: 1px solid #efefef;
+    border-bottom: 1px solid #efefef;
+}
+
+/*期待页面*/
+#h_expect img{
+    width: 90%;
+    margin: 20% 5%;
+}
+.h_order_ul{
+    margin-bottom: 60px;
 }
 /*天平网页版登陆页面end*/
 /*公用样式*/
@@ -1876,6 +1929,9 @@ img + .w-segment {
     margin-left: 15px;
 }
 
+.w-payType-disable{
+    color: #ccc!important;
+}
 .w-payType li input {
     float: right;
     width: 15px;
@@ -1973,8 +2029,8 @@ img + .w-segment {
 
 .w-pTop, .w-pTop div {
     clip: rect(0, auto, 115px, 0);
-    -webkit-transform: rotateZ(50deg);
-    transform: rotateZ(50deg);
+    -webkit-transform: rotateZ(0deg);
+    transform: rotateZ(0deg);
 }
 
 .w-pBottom, .w-pBottom div {
@@ -2098,7 +2154,7 @@ img + .w-segment {
 
 .w-puFooter-lastA {
     display: block;
-    padding-bottom: 55px;
+    margin-bottom: 55px;
 }
 
 .w-puFooter li {
@@ -2198,6 +2254,7 @@ img + .w-segment {
 
 .w-repayGeneral > div {
     width: 100%;
+    padding-bottom: 5px;
     overflow: hidden;
 }
 
@@ -2355,6 +2412,15 @@ img + .w-segment {
 .w-proInfo p:last-child {
     margin-top: 5px;
     color: #EA5504;
+}
+.h-repayNoTip{
+    width: 90%;
+    height: auto;
+    margin-left: 5%;
+}
+.h-repayNoTip img{
+    width: 90%;
+    margin: 20% 5%;
 }
 
 .w-repayNext {
@@ -2642,8 +2708,9 @@ img + .w-segment {
 
 .w-simulate select {
     width: 100%;
+    height:100%;
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0;
     opacity: 0;
 }
@@ -2706,6 +2773,7 @@ img + .w-segment {
     margin-top: 15px;
     margin-bottom: 40px;
     border: none;
+    font-size:18px;	
 }
 
 .w-borderBottom {
@@ -2846,6 +2914,7 @@ img + .w-segment {
     border: none;
     font-size: 16px;
     color: #888;
+    outline:medium;
 }
 
 .w-bind i {
@@ -2919,7 +2988,26 @@ img + .w-segment {
 	overflow: hidden;
 	transition: all 0.1s; 
 }
-.slide ul li{float: left;}
+.slide ul li{float: left;height:100%}
+
+.slide p{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	display: table;
+	text-align: center;
+	position: absolute;
+	bottom: 0;
+}
+.slide p span{
+	width: 7px;
+	height:7px;
+	border-radius: 50%;
+	display: inline-block;
+	background: #666;
+	margin: 0 2px;
+}
+.slide p span.selected{background: orangered;}
 .wk_type{
 	width: 100%;
 	height: auto;
@@ -2934,7 +3022,7 @@ img + .w-segment {
 	float: left;
 	text-align: center;
 }
-.wk_type li img{display: block;margin: 0 auto;width: 40px;}
+.wk_type li img{display: block;margin: 0 auto;width: 42px;}
 .wk_type li p{margin: 5px 0;}
 .wk_type li p+p{font-size: 12px;color: #888;margin: 0;}
 .wk_common{
@@ -2950,7 +3038,7 @@ img + .w-segment {
 	padding-left: 5%;
 	color: #888;
 	font-size: 13px;
-	border-bottom: 1px solid #ddd;
+	border-bottom: 1px solid #efefef;
 }
 .wk_common ul{
 	width: 100%;
@@ -2969,9 +3057,10 @@ img + .w-segment {
 	align-items: center;
 	-webkit-align-items: center;
 }
+.wk_common ul li div{width:91px}
 .wk_common ul li img{width: 40px;height: 40px;margin-right: 10px;}
 .wk_common ul li p+p{font-size: 13px;color: #888;}
-.wk_common ul a+a li{width: 49.5%;border-left:1px solid #ddd ;}
+.wk_common ul a+a li{width: 49.5%;border-left:1px solid #efefef ;}
 .wk_footBar{
 	width: 100%;
 	max-width:640px;
@@ -2979,7 +3068,7 @@ img + .w-segment {
 	overflow: hidden;
 	padding: 5px 0;
 	background: #fff;
-	border-top:1px solid #ccc ;
+	border-top:1px solid #c6c6c6 ;
 	position: fixed;
 	bottom: 0;
 }
@@ -2990,6 +3079,7 @@ img + .w-segment {
 	float: left;
 	text-align: center;
 }
+.wk_footBar li.barSelected a{color: #ea5504;}
 .wk_footBar li img{
 	width: 30px;
 	margin: 0 auto;
@@ -3880,25 +3970,54 @@ i, em {
 }
 
 /*填写信息*/
-.L-article input {
-    width: 50%;
-    margin-left: 5%;
-    height: 40px;
-    border: hidden;
+.L-article div input {
+	height: 40px;
+	margin-left: 2%;
+	width: 45%;
+    /*margin-left: 5%;*/
+    height: 16px;
+    border: none;
     font-size: 14px;
 }
-
+.L-article div:nth-child(5){
+	display: -moz-box; 
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+    -moz-box-align: baseline;
+	-webkit-box-align: baseline;
+	-webkit-align-items: baseline;
+	-ms-flex-align: baseline;
+	align-items:baseline; 
+}
+.L-article div textarea{
+	display: inline-block;
+	width: 60%;
+	height: 32px;
+	font-size: 16px;
+	overflow: hidden;
+	border:none;
+}
 .L-article {
     background-color: #ffffff;
 }
-
-.L-article span {
+.L-article div:nth-child(7) i{
+	margin-left: 8%;
+}
+.L-article div span:first-child {
     margin-left: 5%;
     color: #ea5504;
+    border: none;
 }
-
+.L-article div{
+	line-height: 40px;
+}
 .L-article i {
     color: #888888;
+}
+.L-article div:nth-child(3) i{
+	margin-left: 1%;
 }
 
 /*苏州银行*/

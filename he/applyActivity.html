@@ -7,7 +7,7 @@
 		<link rel="stylesheet" href="css/activity.css" />
 	</head>
 	<body bgcolor="#F3F1EE">
-		<img src="img/applyRule.png" />
+		<img src="img/huoRule.png" />
 		<article>
 			<section class="L-applyCommen">
 				<span class="L-activity">活动名称</span>
@@ -17,7 +17,7 @@
 						<option value="11" id="有话快说，会画画的95后艺术家">有话快说，会画画的95后艺术家</option>
 						<option value="22" id="挪威">挪威</option>
 						<option value="33" id="瑞士"> 瑞士</option>
-					</select></span><input id="L-strong" name="box" style="width:95%;position:absolute;left:0px;top:1px;border: none;text-align: right;color: #ea5504;font-size: 14px;line-height: 37px;"><span class="L-upActivity">></span>
+					</select></span><input id="L-strong" name="box" value="(请输入或选择活动名称)" onfocus="if(this.value==this.defaultValue){this.value='';this.style.color='#ea5504';} " onblur="if(this.value==''){this.value=this.defaultValue; this.style.color='#888';}"style="width:95%;position:absolute;left:0px;top:1px;border: none;text-align: right;color: #888;font-size: 14px;line-height: 37px;"><span class="L-upActivity">></span>
 				</p>
 			</section>
 			<section class="L-applyCommen L-applyActivity">
@@ -35,7 +35,7 @@
 			<section class="L-applyCommen">
 				<span class="L-activity">活动范围</span>
 				<p class="L-activityName">
-					<span id="L-strong2"></span>
+					<span id="L-strong2">(请选择活动范围)</span>
 					<select onchange="choice2(this)">
 						<option value="11" id="校级">校级</option>
 						<option value="22" id="学生会">学生会</option>

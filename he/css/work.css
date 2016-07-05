@@ -116,9 +116,10 @@ i, em {
 	line-height: 25px;
 }
 .L-pannerCommen button{
-	padding: 3% 35% 3% 35%;
-	margin-left: 5%;
-	margin-bottom: 10px;
+	width: 90%;
+	height: 100%;
+	padding: 4% 35% 4% 35%;
+	margin: 10px 5%;
 	border-radius: 10px;
 	background-color: #ea5504;
 	color: #ffffff;
@@ -137,6 +138,7 @@ i, em {
 	background-color: #F3F1EE;
 }
 .L-pannerCommen input{
+	width: 95%;
 	border: none;
 	font-size: 14px;
 }
@@ -173,7 +175,7 @@ i, em {
 #L-fill-pannerName{
 	padding: 10px 5%;
 	float: left;
-	width: 25%;
+	width: 35%;
 }
 #L-fill-pannerTel{
 	padding: 10px 5%;
@@ -181,6 +183,7 @@ i, em {
 	width: 45%;
 }
 .L-applyActivity input{
+	width: 95%;
 	border: none;
 	font-size: 14px;
 }

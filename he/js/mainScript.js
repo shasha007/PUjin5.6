@@ -8,7 +8,9 @@ var limitScale = function () {
     var foot = document.getElementById("w-puFooter");
     if (all >= can) {
         var angle = (can / all).toFixed(2) * 360;
+		
         if (angle > 180) {
+			
             pt.style.transform = "rotateZ(180deg)";
             pt.style.webkitTransform = "rotateZ(180deg)";
             angle = angle - 180;
@@ -16,6 +18,7 @@ var limitScale = function () {
             pb.style.webkitTransform = "rotateZ(" + angle + "deg)";
         }
         else {
+			
             pt.style.transform = "rotateZ(" + angle + "deg)";
             pt.style.webkitTransform = "rotateZ(" + angle + "deg)";
         }
@@ -41,6 +44,7 @@ window.onload = function () {
     limitScale();
     if (typeof(Android) == "undefined") {
         document.getElementById("w-puFooter").style.display="none";
+        document.getElementsByClassName("w-puFooter-lastA")[0].style.paddingBottom="0";
     } else {
     }
 }

@@ -8,20 +8,9 @@
     <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="css/style.css?v=001" rel="stylesheet">
     <link href="css/reset.css?v=001" rel="stylesheet">
-
 </head>
 <body>
 
-<!--<header class="h-public-header ">-->
-    <!--<div>-->
-    <!--</div>-->
-    <!--<div class="h-order-slc">-->
-        <!--我的订单 <span class="h-span-down">-->
-        <!--<img src="img/down-3030.png">-->
-    <!--</span>-->
-    <!--</div>-->
-
-<!--</header>-->
 <div class="h-header-select clearfix">
     <p class="on">所有订单</p>
     <p><a href="">扑金</a></p>
@@ -37,7 +26,7 @@
     <div data-ptype="4"> 已驳回</div>
 </header>
 <div class="h-fqsc">
-    <ul class="">
+    <ul class="h_order_ul">
         <li >
           <header class="clearfix container">
               <p class="pull-left">扑金</p>
@@ -187,9 +176,37 @@
         </li>
     </ul>
 </div>
+
+<ul class="wk_footBar">
+    <!--给相应li添加class表选中的状态-->
+    <li><a href="">
+        <img src="img/wimg8.png" data-src="img/wimg88.png">
+        <p>首页</p></a>
+    </li>
+    <li class="barSelected"><a href="">
+        <img src="img/wimg9.png" data-src="img/wimg99.png">
+        <p>订单</p></a>
+    </li>
+    <li><a href="">
+        <img src="img/wimg10.png" data-src="img/wimg1010.png">
+        <p>客服</p></a>
+    </li>
+    <li><a href="">
+        <img src="img/wimg11.png" data-src="img/wimg1111.png">
+        <p>我的</p></a>
+    </li>
+</ul>
 </body>
-</html>
 <script src="bower_components/jquery/dist/jquery.js"></script>
-<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
-<!--<script src="js/h-pu-jin.js"></script>-->
 <script src="js/order.js"></script>
+<script src="js/jr.js" ></script>
+<script>
+    if (typeof(Android) !== "undefined") {
+        $(".wk_footBar").hide();
+    }else{
+        $(".h-fqsc").css({"margin-bottom":"65px","padding-bottom":"5px"});
+    }
+</script>
+</html>
+
+

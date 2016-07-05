@@ -26,6 +26,25 @@
 		
 	</div>
 	<div class="w-repayGeneral w-bind w-autofocus"><i>银行卡号：</i><input type="text"></div>
+	<div class="w-repayGeneral w-bind">
+        <i style="line-height: 39px;">银行卡归属地：</i>
+        <p class="w-simulate" style="width: 25%">
+            <strong>选择城市</strong>
+            <select name="city_id" id="city_id" style="height:100%">
+            	<option value="1">苏州</option>
+            </select>
+        </p>
+        <p class="w-simulate" style="width: 25%">
+            <strong>选择省份</strong>
+            <select name="province_id" id="province_id" style="height:100%">
+                <option value="0">选择省份</option>
+                <volist name="provinces" id="province">
+                    <option value="1">江苏省</option>
+                </volist>
+            </select>
+        </p>
+
+    </div>
 	<div class="w-repayGeneral w-bind w-autofocus"><i>预留手机号：</i><input type="text"></div>
 	<div class="w-repayGeneral w-bind w-b-testing">
 		<i>验证码：</i>
