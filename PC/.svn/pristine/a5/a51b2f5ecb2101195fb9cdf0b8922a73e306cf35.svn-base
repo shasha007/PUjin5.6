@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pu口袋校园</title>
+		<link rel="stylesheet" href="src/css/reset.min.css" />
+		<link rel="stylesheet" href="src/css/style.css" />
+	</head>
+	<body>
+		<div class="wk_container_regist"></div>
+	</body>
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pu口袋校园</title>
+		<link rel="stylesheet" href="css/reset.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<iframe src="PublicHeader.html" frameborder="0" scrolling="no" width="100%" height="88"></iframe>
+		<div class="wk_container_regist">
+			<div class="wk_autContiner">
+				<b>上传学生证</b>
+				<ul>
+					<li>
+						<img src="images/u65.png" class="wk_icon">
+						<p>选择照片</p>
+						<input type="file"/>
+					</li>
+					<li>
+						<img src="images/u65.png" class="wk_icon">
+						<p>选择照片</p>
+						<input type="file"/>
+					</li>
+					<button>确定上传</button>
+				</ul>
+				<p>
+					<input type="checkbox" />
+					<span>我已阅读并同意<a href="">《PU口袋校园用户注册协议》</a></span>
+				</p>
+				<p>
+					<a href=""  class="wk_regist_button">实名认证并完成注册</a>
+					<a href=""  class="wk_regist_button">跳过并完成注册</a>
+				</p>
+			</div>
+		</div>
+		<iframe src="PublicFooter.html" frameborder="0" scrolling="no" width="100%" height="186"></iframe>
+	</body>
+	<script src="js/jquery-1.12.1.min.js"></script>
+	<script src="js/login.js"></script>
+</html>

@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+<head>
+    <meta charset="UTF-8">
+    <title>公共头部</title>
+    <link href="css/reset.min.css" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
+</head>
+<body>
+<header class="h_PublicHeader">
+    <div>
+        <img src="images/Logo_header.png">
+    </div>
+    <div>
+        <span class="h_PuHe_btn">
+            注册
+        </span>
+    </div>
+</header>
+</body>
+</html>

@@ -1,0 +1,150 @@
+/** 清除内外边距 **/
+body, hr, p, blockquote, /* structural elements 结构元素 */
+dl, dt, dd, ul, ol, li, /* list elements 列表元素 */
+pre, /* text formatting elements 文本格式元素 */
+form, fieldset, legend, button, input, textarea, /* form elements 表单元素 */
+th, td /* table elements 表格元素 */ {
+    margin: 0;
+    padding: 0;
+}
+body{font-family: "微软雅黑";}
+.customContainer{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+}
+.menu{
+	width: 240px;
+	height: auto;
+	background: #424f63;
+	float: left;
+	position: fixed;
+	top:0;
+	min-height: 100%;
+}
+.menu>ul{
+	width: 100%;
+	overflow: hidden;
+}
+.menu>ul>li{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	color: #fff;
+	cursor: pointer;
+	position: relative;
+}
+.menu>ul>li p,.menu>ul>li div{padding: 10px;overflow: hidden;}
+.menu>ul>li p.add:after{content: "+";float: right;}
+.menu>ul>li p.sub:after{content: "-";float: right;}
+.menu>ul>li span{margin-right: 10px;}
+.menu>ul>li ul{background: #424F63;width: 100%;display: none;}
+.menu>ul>li ul li{
+	padding: 10px 10px 10px 35px;
+}
+.menu>ul>li:hover{
+	background: #353f4f;
+}
+.menu>ul>li:hover p{color: #65cea7;}
+.menu>ul>li ul li:hover{
+	background:#353F4F;
+	color: #65CEA7;
+}
+.menu>ul>li.selected{background:#353F4F;}
+.menu>ul>li.selected p{color: #65CEA7;}
+.mainContent{
+	overflow: hidden;
+	margin-left: 240px;
+	padding-top: 50px;
+}
+.mainContent .head_section{
+	width:-moz-calc(100% - 240px);
+	width:-webkit-calc(100% - 240px);
+	width:calc(100% - 240px);
+	height: 50px;
+	position: fixed;
+	top:0;
+	background: #fff;
+	display: flex;
+	align-items: center;
+	z-index: 9;
+	background: #f2f1ee;
+}
+.head_info{
+	min-width: 50px;
+	height: 50px;
+	padding: 0 10px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: relative;
+}
+.head_info:hover,.head_info:focus{
+	background: #353F4F;
+	color: #65CEA7;
+}
+.mainContent .head_section .btn-group{
+	position: fixed;
+	right: 0px;
+}
+.mainContent .head_section .input-group{margin-left: 15px;}
+.mainContent .head_section .input-group+div{float: right;}
+.mainContent .head_section .btn-group img{width: 14px;margin-right: 5px;}
+.mainContent .head_section .btn-group .badge{
+	width: 20px;
+	height: 20px;
+	border-radius:50% ;
+	position: absolute;
+	top:5px;
+	right: 5px;
+	text-align: center;
+	line-height: 20px;
+	font-size: 12px;
+	padding: 0;
+	background: orangered;
+}
+.mainContent .head_section .btn_op1{right: 127px;}
+.mainContent .head_section .btn_op2{right: 177px;}
+.mainContent_area{
+	width:-moz-calc(100% - 30px);
+	width:-webkit-calc(100% - 30px);
+	width:calc(100% - 30px);
+	padding:15px;
+}
+.mainContent_area>div{border-bottom: 1px dashed #888;padding-bottom: 15px;}
+.mainContent_area div h4{padding-bottom: 10px;font-weight: bold !important;}
+.mainContent_area_list div{
+	width: 100%;
+	overflow: hidden;
+	padding: 10px 0;
+}
+.mainContent_area_list div p{float: left;width:30%;}
+.mainContent_area_list div p span{margin-right: 10px;min-width:50px;display: block;float: left;}
+.mainContent_area_list div p i{font-style: normal;}
+.mainContent_area_list div p label{font-weight: 100;margin-left: 5px;}
+.mainContent_area_list form{padding-bottom: 20px;border-bottom: 1px solid #ccc;}
+.mainContent_area_list .search_result{
+	width: 100%;
+	overflow: hidden;
+}
+.mainContent_area_list .search_result>p{
+	width: 100%;
+	height: 40px;
+	background:#286090;
+	padding-left: 1%;
+}
+.mainContent_area_list .search_result>p span{line-height: 40px;color: #fff;}
+.mainContent_area_list .search_result>p button{
+	height: 24px;
+	padding: 0 10px;
+	font-size: 12px;
+	overflow: hidden;
+	margin-top: 8px;
+	margin-right: 10px;
+}
+.mainContent_area_list div{border-bottom: none;}
+.mainContent_area_list table p{float: right;width: auto;}
+.mainContent_area_list table p b{display: block;cursor: pointer;}
+.mainContent_area_list table p .caret_up{border-bottom: 4px dashed;border-top:none ;margin-bottom: 11px;}
+.mainContent_area_list .pagination{float: right;}
+.mainContent_area_list .search_result select{height: 34px;float: right;margin-top: 20px;margin-right: 35px;}

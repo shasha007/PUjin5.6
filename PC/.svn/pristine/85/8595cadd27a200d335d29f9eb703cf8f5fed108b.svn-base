@@ -1,0 +1,86 @@
+/*王坤 start*/
+/*todo*/
+body{font-family: '微软雅黑 Light', '微软雅黑';}
+.wk_container_regist{
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+	background-image: url(../images/u0.jpg);
+	background-size: 100%;
+	position: relative;
+}
+.wk_container_regist span{
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -135px;
+	top:85px;
+}
+.wk_regist{
+	width: 410px;
+	height: 300px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 182px auto;
+	padding: 0px 55px;
+	overflow: hidden;
+}
+.wk_regist p{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 60px;
+}
+.wk_regist div{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom:1px solid #ccc;
+}
+.wk_regist div:after{
+	content: ">";
+	float: right;
+}
+/*王坤 end*/
+
+/*李莎 start*/
+/*todo*/
+/*李莎 end*/
+
+/*胡启文 start*/
+/*todo*/
+/*公共头部*/
+#PubilcHeader{
+    width: 100%;
+    border: none;
+}
+.h_PublicHeader{
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+    height: 88px;
+    margin: 0 auto;
+    line-height: 88px;
+}
+.h_PublicHeader div{
+    flex: 1;
+    margin: 0 15px;
+}
+
+.h_PuHe_btn{
+    display: block;
+    float: right;
+    width: 88px;
+    height: 32px;
+    margin-top:  28px;
+    line-height: 32px;
+    text-align: center;
+    color: #ea5504;
+    border: 1px solid #ea5504;
+    border-radius: 5px;
+}
+/*胡启文 end*/

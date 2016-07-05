@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>pu口袋校园</title>
+		<link rel="stylesheet" href="css/reset.min.css" />
+		<link rel="stylesheet" href="css/style.css" />
+	</head>
+	<body>
+		<iframe src="PublicHeader.html" frameborder="0" scrolling="no" width="100%" height="88"></iframe>
+		<div class="wk_container_regist">
+			<span>让校园活动触手可及</span>
+			<div class="wk_regist">
+				<p>注册</p>
+				<div>
+					选择学校<span>></span>
+				</div>
+				<a href="">下一步</a>
+			</div>
+		</div>
+		<iframe src="PublicFooter.html" frameborder="0" scrolling="no" width="100%" height="186"></iframe>
+	</body>
+</html>

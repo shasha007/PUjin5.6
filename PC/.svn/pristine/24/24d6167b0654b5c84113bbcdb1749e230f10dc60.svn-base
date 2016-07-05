@@ -1,0 +1,828 @@
+/*王坤 start*/
+/*todo*/
+body{font-family: '微软雅黑 Light', '微软雅黑';}
+ul,li{list-style: none;}
+.wk_container_regist,.wk_container_login,.wk_container_init{
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+	background-image: url(../images/u0.jpg);
+	background-size: 100% 100%;
+	background-repeat: no-repeat;
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	outline: medium;
+}
+.wk_container_init{background-image: url(../images/u6.jpg);}
+.wk_container_regist>span,.wk_container_init>span{
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -135px;
+	top:85px;
+}
+.wk_regist{
+	width: 410px;
+	height: 300px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 182px auto;
+	padding: 0px 55px;
+	overflow: hidden;
+}
+.wk_regist p,.wk_regist_upload p,.wk_regist_password p,.wk_regist_phone p{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 50px;
+}
+.wk_regist div{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom:1px solid #ccc;
+	margin-top: 50px;
+	color: #666;
+}
+.wk_regist div:after{
+	content: ">";
+	float: right;
+}
+.wk_container_regist a.wk_nextJump{
+	display: block;
+	width: 319px;
+	height: 50px;
+	background: #ccc;
+	border-radius:2px ;
+	text-align: center;
+	line-height: 50px;
+	font-size: 13px;
+	color: #fff;
+	margin: 40px auto;
+}
+.wk_regist_upload{
+	width: 410px;
+	height: 700px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 60px auto;
+	padding: 0px 55px;
+	border: 1px solid transparent;
+}
+.wk_regist_upload>div{
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	position: relative;
+}
+.wk_regist_upload>div input[type=text]{width: 100%;}
+.wk_regist_upload>div img{
+	width: 100px;
+	height: 100px;
+	border-radius:50% ;
+}
+.wk_regist_upload>div i{
+	display: block;
+	width: 88px;
+	height: 30px;
+	border-radius:2px ;
+	background: #ccc;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 35px;
+	float: right;
+	position: relative;
+}
+.wk_regist_upload>div i input{
+	position: absolute;
+	top:2px;
+	left: 0;
+	opacity: 0;
+}
+.wk_regist_upload>div em{
+	width: 170px;
+	height: 28px;
+	border: 1px solid #ccc;
+	float: right;
+	margin-top: 35px;
+	margin-right: 10px;
+	line-height: 28px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding:0 5px;
+}
+.wk_regist_upload button{
+	float: right;
+	width: 116px;
+	height: 30px;
+	border: none;
+	border-radius:5px ;
+	background: orangered;
+	color: #fff;
+	cursor: pointer;
+}
+.wk_regist_upload>div div{
+	width: 356px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	color: #666;
+	float: right;
+}
+.wk_regist_upload>div input[type=text]{border: none;color: #666;font-size: 15px;}
+.wk_regist_upload>div span{
+	display: inline-block;
+	width: 140px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.wk_regist_upload>div span:after{
+	content: ">";
+	float: right;
+}
+.wk_regist_upload_select{margin-left: 20px;}
+.wk_regist_upload>div label+input{margin-left: 120px;}
+.wk_regist_upload>div input[type=radio]{margin-right: 10px;}
+.wk_regist_upload>div p{
+	width: 200px;
+	height: 50px;
+	background: #1B6D85;
+	position: absolute;
+	margin-top: 0;
+	top:-31px;
+	right: -200px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 50px;
+	font-weight: 100;
+	display: none;
+}
+.wk_regist_upload>div a{background: orange;}
+.wk_regist_password,.wk_regist_phone{
+	width: 410px;
+	height: 400px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 182px auto;
+	padding: 0px 55px;
+	border: 1px solid transparent;
+}
+.wk_regist_password input,.wk_regist_phone>input{
+	width: 100%;
+	height: auto;
+	padding-bottom: 10px;
+	overflow: hidden;
+	border: none;
+	border-bottom: 1px solid #ccc;
+	margin-top: 55px;
+	color: #666;
+	font-size: 14px;
+}
+.wk_regist_password input:focus{color: orangered;border-bottom: 1px solid orangered;font-size: 20px;}
+.wk_regist_password a{background: orangered;}
+.wk_regist_phone div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	margin-top: 55px;
+}
+.wk_regist_phone div span{font-size: 14px;color: #666;}
+.wk_regist_phone div input{border: none;font-size: 14px;color: #666;margin-left: 15px;}
+.wk_regist_phone div button{
+	float: right;
+	border: none;
+	background: none;
+	font-weight: bold;
+	color: lightblue;
+	cursor: pointer;
+}
+.wk_regist_phone a{background: orangered;}
+.wk_login_title p:first-child{
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 30px;
+}
+.wk_login_title p:first-child+p{
+	font-size: 29px;
+	color: #666;
+}
+.wk_login_area{
+	width: 304px;
+	height: 420px;
+	border-radius:5px ;
+	background: #fff;
+	margin-left:150px ;
+	position: relative;
+}
+.wk_login_area>p{
+	width: 100%;
+	height: 49px;
+	border-top-left-radius:5px ;
+	border-top-right-radius:5px ;
+	position: relative;
+}
+.wk_login_area>p span{
+	display: block;
+	float: left;
+	width: 50%;
+	height: 100%;
+	text-align: center;
+	line-height: 49px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #555;
+	border-bottom: 1px solid #ccc;
+	background: #f1f2ee;
+	border-top-left-radius:5px ;
+	cursor: pointer;
+}
+.wk_login_area p span+span{
+	border-top-right-radius:5px ;
+}
+.wk_login_area>p:first-child em{
+	width: 1px ;
+	height: 100%;
+	position: absolute;
+	border: none;
+	border-left: 1px solid #ccc;
+	left: 50%;
+}
+.wk_login_area>p:first-child span.wk_selected{
+	background: none;
+	font-weight: 100;
+	border-bottom: 1px solid transparent;
+}
+.wk_login_area>div{
+	width: 266px;
+	height: auto;
+	padding: 0 19px;
+	border: 1px solid transparent;
+}
+.wk_login_area>div p{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 13px;
+	color: #666;
+	margin-top: 30px;
+}
+.wk_login_school{cursor: pointer;position: relative;}
+.wk_login_school:after{
+	content: url(../images/u47.png);
+	float: right;
+}
+.wk_login_area>div p input[type=text],.wk_login_area>div p input[type=password]{
+	width: 100%;
+	border: none;
+	font-size: 13px;
+	color: #666;
+}
+.wk_login_area>div p label{margin-left: 10px;}
+.wk_login_area>div p a{float: right;color: #006699;}
+.wk_login_area>div p.wk_remember{border-bottom: none;}
+.wk_login_area>button{
+	width: 266px;
+	height: 42px;
+	border: none;
+	border-radius:3px ;
+	font-size: 14px;
+	color: #fff;
+	margin-top: 20px;
+	background: orangered;
+	cursor: pointer;
+	margin-left: 19px;
+}
+.wk_login_area>p img{margin-left: 19px;}
+.wk_login_area>p a{float: right;color: #888;font-size: 14px;margin-top: 9px;margin-right: 19px;}
+.wk_login_area>button+p{position: absolute;bottom: 5px;}
+.wk_login_area .wk_loginByPhone{display: none;}
+.wk_loginSchool{
+	width: 400px !important;
+	overflow: hidden;
+	padding: 19px !important;
+	background: #f1f2ee;
+	position: absolute;
+	top:80px;
+	left: -68px;
+	border-radius: 5px;
+	font-size: 14px;
+	display: none;
+}
+.wk_loginSchool b{
+	display: block;
+	font-size: 16px;
+}
+.wk_login_schoolMu{
+	width: 100%;
+	overflow: hidden;
+}
+.wk_loginSchool p{border-bottom: none !important;}
+.wk_loginSchool p span{cursor: pointer;}
+.wk_loginSchool p span:hover{color: orangered;font-weight: bold;}
+.wk_loginSchool div{
+	width: 100%;
+	height: auto;
+	overflow: hidden;
+	padding-bottom:10px;
+}
+.wk_loginSchool div span{margin-right: 15px;margin-top: 15px;display: block;float: left;cursor: pointer;}
+.wk_loginTips{
+
+	color: red;
+	font-size: 12px;
+	margin-top: 5px;
+	display: none;
+}
+.wk_loginTips img{height: 16px;margin-right: 5px;}
+.wk_autContiner{
+	width: 410px;
+	height: auto;
+	border-radius:5px ;
+	background: #fff;
+	padding:55px;
+}
+.wk_autContiner b{display: block;color: orangered;font-size: 20px;}
+.wk_autContiner>ul{
+	width: auto;
+	height: auto;
+	padding: 20px 10px;
+	border: 1px dashed #ccc;
+	margin-top: 20px;
+	overflow: hidden;
+}
+.wk_autContiner>ul li{
+	width: auto;
+	height: auto;
+	max-width: 78px;
+	overflow: hidden;
+	padding: 0px 50px;
+	border: 1px solid #ccc;
+	float: left;
+	position: relative;
+	overflow: hidden;
+}
+.wk_autContiner>ul li input{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top:0;
+	left: 0;
+	opacity: 0;
+}
+.wk_autContiner>ul li+li{float: right;}
+.wk_autContiner>ul li p{text-align: center;font-size: 14px;margin-bottom: 15px;}
+.wk_autContiner>ul button{
+	float: none;
+	border: none;
+	background: orangered;
+	width: 116px;
+	height: 30px;
+	margin-top: 20px;
+	margin-left: 136px;
+	color: #fff;
+	border-radius:3px ;
+	cursor: pointer;
+}
+.wk_icon{width: 78px;display: block;}
+.wk_autContiner>p{
+	width: 100%;
+	overflow: hidden;
+	font-size: 12px;
+	color: #888;
+	margin-top: 20px;
+}
+.wk_autContiner>p a{color: #007AFF;}
+.wk_regist_button{
+	width: 190px;
+	height: 50px;
+	text-align: center;
+	line-height: 50px;
+	display: block;
+	color: #666 !important;
+	border: 1px solid #555;
+	border-radius:3px ;
+	font-size: 14px;
+	float: right;
+	margin-top: 10px;
+}
+.wk_regist_button:first-child{
+	border: none;
+	background: orangered;
+	color: #fff !important;
+	float: left;
+}
+.wk_container_init>div{
+	width: 442px;
+	height: auto;
+	position: relative;
+	padding: 59px;
+	background: #fff;
+	border-radius:3px ;
+}
+.wk_container_init>div b{
+	display: block;
+	font-size: 20px;
+	color: #333;
+}
+.wk_container_init>div div{width: 100%;overflow: hidden;margin-top: 25px;}
+.wk_container_init>div div b{font-size: 14px;color: #666;float: left;}
+.wk_container_init>div div p{
+	width: 400px;
+	float: right;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+	font-size: 14px;
+}
+.wk_container_init>div div input[type=text],.wk_container_init>div div input[type=password]{width: 100%;border: none;color: #666;font-size: 14px;}
+.wk_container_init .wk_pwInput p{width: 150px;float: left;position: relative;}
+.wk_container_init .wk_pwInput p+b{margin-left: 44px;}
+.wk_container_init .wk_pwInput p button{position: absolute;right: 0;top:0;border: none;background: none;color: #007AFF;cursor: pointer;}
+.wk_container_init .wk_sexInput p{width: 279px;float: left;}
+.wk_container_init .wk_sexInput p label{margin-left: 5px;}
+.wk_container_init .wk_sexInput p label+input[type=radio]{margin-left: 120px;}
+.wk_initTips{color: red;font-size: 12px;display: flex;align-items: center;margin-top: 10px;}
+.wk_initTips img{height: 20px;margin-right: 5px;margin-left: 37px;}
+.wk_container_init>div a{
+	width: 266px;
+	height: 42px;
+	background: #ddd;
+	color: #fff;
+	text-align: center;
+	line-height: 42px;
+	border-radius:3px ;
+	display: block;
+	margin: 0 auto;
+	margin-top: 45px;
+}
+.wk_container_init .wk_sexTips{
+	width: 180px;
+	height: 50px;
+	background: url(../images/u44.png);
+	position: absolute;
+	bottom: 150px;
+	right: -120px;
+	line-height: 50px;
+	color: #fff;
+	font-size: 14px;
+	padding-left: 20px;
+}
+
+
+
+
+
+/*王坤 end*/
+
+/*李莎 start*/
+/*todo*/
+.L-banner{
+	width: 100%;
+	height: 150px;
+}
+.L-studenthelp{
+    background-color: #FFFFFF;
+}
+.L-studenthelp ul{
+	width: 70%;
+    margin: 0 12%;
+}
+.L-teacherhelp{
+    background-color: #FFFFFF;
+}
+.L-teacherhelp ul{
+	width: 70%;
+    margin: 0 12%;
+}
+.L-fahelp{
+    background-color: #FFFFFF;
+}
+.L-fahelp ul{
+	width: 70%;
+    margin: 0 12%;
+}
+.L-help{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+}
+.L-help section{
+	padding-top: 2%;
+	line-height: 30px;
+	color: #626262;
+}
+.L-help section div{
+	font-size: 18px;
+}
+.L-help section:nth-child(2) div:last-child{
+	padding-top:15px ;
+}
+.L-help section:nth-child(3) div:last-child{
+	padding-top:15px ;
+}
+.L-help section:nth-child(4){
+	padding-bottom:3% ;
+}
+.L-help section p{
+	padding: 2% 0;
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+.L-nav2{
+	background-image: url(../images/u69.png);
+	width: 100%;
+	height: 50%;
+	background-size: 100% 50%;
+}
+.L-nav2 ul{
+	width: 100%;
+    margin: 0 10%;
+    list-style: none;
+    line-height: 60px;
+    overflow: hidden;
+}
+.L-nav2 ul li{
+	float:left;
+	text-align: center;
+	width: 10%;
+	height: 60px;
+}
+.L-nav2 ul li a{
+	font-size: 16px;
+	font-weight: bold;
+}
+.L-nav2 ul li:first-child a{
+	color: #E63F00;
+
+}
+.L-nav{
+	max-width: 1080px;
+	width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    background-color: #FFFFFF;
+}
+.L-nav ul{
+	list-style: none;
+    line-height: 88px;
+}
+.L-nav ul li{
+	float:left;
+	text-align: center;
+	width: 10%;
+	height: 50px;
+}
+.L-nav ul li a{
+	line-height: 50px;
+	font-size: 18px;
+	display: block;
+}
+.L-question a{
+	color: #E63F00;
+}
+.L-question{
+	border-bottom: 3px solid #ea5504;
+}
+.L-usehelp {
+    border-bottom: 3px solid #ea5504;
+}
+.L-usehelp a{
+    color: #E63F00;
+}
+.L-imgContact{
+	position: absolute;
+	top: 27%;
+	font-weight: bold;
+	font-size: 34px;
+	color: #FFFFFF;
+}
+.L-contact{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+    border: 1px solid #F3F1EE;
+}
+.L-contact section{
+	padding-top: 2%;
+	line-height: 20px;
+	color: #666;
+}
+.L-contact section span{
+	color: #000000;
+}
+.L-contact section:last-child{
+	margin-bottom: 3%;
+}
+.L-contact section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-contact section p:last-child{
+	line-height: 1.5;
+}
+.L-contact section:nth-child(2) p:last-child span{
+	color: #626262;
+	font-weight: bold;
+}
+.L-contact2{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+}
+.L-contact2 section{
+	padding-top: 2%;
+	line-height: 30px;
+	color: #626262;
+}
+
+.L-contact2 section:first-child p{
+	/*margin-top: 3%;*/
+	color: #000000;
+	font-weight: bold;
+}
+.L-left{
+	float: left;
+	width: 50%;
+}
+.L-left section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-left section p{
+	line-height: 1.5;
+}
+.L-left section span{
+	color: #ec4c15;
+}
+.L-right section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-right section p{
+	line-height: 1.5;
+}
+.L-right section{
+	margin-top: -1%;
+}
+.L-contact2 h3{
+	color: #ec4c15;
+}
+.mui-table-view li {
+    line-height: 30px;
+    border-bottom: 1px solid #F3F1EE;
+}
+
+.mui-table-view-cell:after {
+    background-color: #F3F1EE;
+    left: 0;
+}
+
+.mui-table-view:before {
+    background-color: #F3F1EE;
+}
+
+.mui-table-view:after {
+    background-color: #F3F1EE;
+}
+
+.mui-table-view-cell.mui-active {
+    background-color: #ffffff;
+    color: #000000;
+}
+.mui-collapse-content {
+    background-color: #f3f1ee;
+}
+
+.mui-table-view-cell.mui-collapse.mui-active > .mui-navigate-right:after, .mui-table-view-cell.mui-collapse.mui-active > .mui-push-right:after {
+    right: 15px;
+    content: '∨';
+    font-size: 12px;
+    color: #d7d7d7;
+    font-weight: bold;
+}
+.mui-table-view-cell.mui-collapse > .mui-navigate-right:after, .mui-table-view-cell.mui-collapse > .mui-push-right:after {
+    content: '>';
+    color: #d7d7d7;
+    font-weight: bold;
+}
+.mui-table-view-cell.mui-collapse .mui-collapse-content{
+	background: #f2f2f2;
+}
+.mui-navigate-right:after, .mui-push-left:after, .mui-push-right:after{
+	color: #000000;
+}
+.mui-navigate-right{
+	color: #080808;
+	font-size: 18px;
+}
+/*李莎 end*/
+
+/*胡启文 start*/
+
+/*公共头部*/
+#PubilcHeader{
+    width: 100%;
+    border: none;
+}
+.h_PublicHeader{
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+	min-width: 720px;
+    height: 88px;
+    margin: 0 auto;
+    line-height: 88px;
+}
+.h_PublicHeader div{
+    flex: 1;
+    margin: 0 15px;
+}
+
+.h_PuHe_btn{
+    display: block;
+    float: right;
+    width: 88px;
+    height: 32px;
+    margin-top:  28px;
+    line-height: 32px;
+    text-align: center;
+    color: #ea5504;
+    border: 1px solid #ea5504;
+    border-radius: 5px;
+}
+
+/*公共尾部*/
+.h_PublicFooter{
+	width: 100%;
+	height: 186px;
+	padding: 0 15px;
+	color: #999;
+	background-color: #f7f7f7;
+}
+.h_PublicFooter >div{
+	display: flex;
+	max-width: 1080px;
+	min-width: 720px;
+	margin: 0 auto;
+
+}
+.h_PublicFooter > div > div:nth-child(1){
+	flex: 3;
+}
+.h_PublicFooter > div > div:nth-child(2){
+	flex: 2;
+}
+.h_PuFo_InFo{
+	padding: 43px 0;
+
+}
+.h_PuFo_Info{
+	display: flex;
+	width: 100%;
+	max-width: 640px;
+	margin-bottom: 10px;
+}
+.h_PuFo_InFo p{
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+}
+.h_PuFo_Info a{
+	display: block;
+	flex: 1;
+	color: #999;
+
+}
+.h_PuFo_Img{
+	text-align: center;
+}
+.h_PuFo_Img p{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.h_PuFo_Img div{
+	float: right;
+	width: 100px;
+	height: 136px;
+	margin-right:30px;
+	padding-top: 25px;
+	/*flex: 1;*/
+}
+.h_PuFo_trust{
+	height: 100%;
+	padding-left: 30px;
+}
+/*胡启文 end*/

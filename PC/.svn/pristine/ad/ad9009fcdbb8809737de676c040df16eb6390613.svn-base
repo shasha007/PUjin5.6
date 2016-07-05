@@ -1,0 +1,9 @@
+/**/
+.dataTables_paginate {
+	float: right;
+	text-align: right;
+	display: none;
+}
+#dynamic-table_length{
+	display: none;
+}

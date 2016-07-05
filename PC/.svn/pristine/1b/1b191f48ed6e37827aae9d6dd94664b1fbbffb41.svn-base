@@ -1,0 +1,49 @@
+$(function(){
+//	选择登录方式
+	$(".wk_login_area p:first-child span").click(function(){
+		$(this).siblings().removeClass("wk_selected");
+		$(this).addClass("wk_selected");
+		if($(this).index()==0){
+			$(".wk_loginByPhone").hide();
+			$(".wk_loginByNumber").show();
+		}
+		else{
+			$(".wk_loginByNumber").hide();
+			$(".wk_loginByPhone").show();
+		}
+	});
+//	显示/隐藏获取学校控价
+	$(".wk_login_school").hover(function(){	
+		$(".wk_loginSchool").slideDown("fast");
+	});
+	$(".wk_loginSchool").mousemove(function(){
+		$(".wk_loginSchool").css("display","block");
+	});
+	$(".wk_loginSchool").mouseout(function(){
+		$(".wk_loginSchool").css("display","none");
+	});
+//	根据相应首字母获取学校
+	$(".wk_login_schoolMu span:nth-child(5)").hover(function(){
+		$.ajax({
+			type:"get",
+			url:"../json/school.json",
+			async:true,
+			data:"A",
+			success:function(data){
+				var schoolArray=data.school;
+				for(var i=0;i<schoolArray.length;i++){
+					var span=document.createElement("span");
+					span.innerText=schoolArray[i];
+					$(".wk_loginSchool div").append(span);
+				}
+			}
+		});
+	});
+//	上传学生证
+	$(".wk_autContiner ul li input").change(function(){
+		console.log($(this).parent())
+	});
+	$(".wk_autContiner ul li").click(function(){
+		console.log($(this).parent())
+	});
+});

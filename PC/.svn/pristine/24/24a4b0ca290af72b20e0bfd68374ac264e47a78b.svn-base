@@ -1,0 +1,382 @@
+/*王坤 start*/
+/*todo*/
+body{font-family: '微软雅黑 Light', '微软雅黑';}
+ul,li{list-style: none;}
+.wk_container_regist{
+	width: 100%;
+	height: 820px;
+	overflow: hidden;
+	background-image: url(../images/u0.jpg);
+	background-size: 100%;
+	position: relative;
+}
+.wk_container_regist>span{
+	font-size: 32px;
+	font-weight: bold;
+	color: #fff;
+	position: absolute;
+	left: 50%;
+	margin-left: -135px;
+	top:85px;
+}
+.wk_regist{
+	width: 410px;
+	height: 300px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 182px auto;
+	padding: 0px 55px;
+	overflow: hidden;
+}
+.wk_regist p,.wk_regist_upload p{
+	width: 100%;
+	overflow: hidden;
+	font-size: 20px;
+	font-weight: bold;
+	color: #333;
+	margin-top: 50px;
+}
+.wk_regist div{
+	width: 100%;
+	overflow: hidden;
+	padding-bottom: 10px;
+	border-bottom:1px solid #ccc;
+	margin-top: 50px;
+	color: #666;
+}
+.wk_regist div:after{
+	content: ">";
+	float: right;
+}
+.wk_container_regist a{
+	display: block;
+	width: 319px;
+	height: 50px;
+	background: #ccc;
+	border-radius:2px ;
+	text-align: center;
+	line-height: 50px;
+	font-size: 13px;
+	color: #fff;
+	margin: 40px auto;
+}
+.wk_regist_upload{
+	width: 410px;
+	height: 700px;
+	border-radius:5px ;
+	background: #fff;
+	margin: 60px auto;
+	padding: 0px 55px;
+	border: 1px solid transparent;
+}
+.wk_regist_upload>div{
+	width: 100%;
+	height: auto;
+	margin-top: 40px;
+	position: relative;
+}
+.wk_regist_upload>div input[type=text]{width: 100%;}
+.wk_regist_upload>div img{
+	width: 100px;
+	height: 100px;
+	border-radius:50% ;
+}
+.wk_regist_upload>div i{
+	display: block;
+	width: 88px;
+	height: 30px;
+	border-radius:2px ;
+	background: #ccc;
+	text-align: center;
+	line-height: 30px;
+	margin-top: 35px;
+	float: right;
+	position: relative;
+}
+.wk_regist_upload>div i input{
+	position: absolute;
+	top:2px;
+	left: 0;
+	opacity: 0;
+}
+.wk_regist_upload>div em{
+	width: 170px;
+	height: 28px;
+	border: 1px solid #ccc;
+	float: right;
+	margin-top: 35px;
+	margin-right: 10px;
+	line-height: 28px;
+	font-size: 12px;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	white-space: nowrap;
+	padding:0 5px;
+}
+.wk_regist_upload button{
+	float: right;
+	width: 116px;
+	height: 30px;
+	border: none;
+	border-radius:5px ;
+	background: orangered;
+	color: #fff;
+	cursor: pointer;
+}
+.wk_regist_upload>div div{
+	width: 356px;
+	border-bottom: 1px solid #ccc;
+	padding-bottom: 5px;
+	color: #666;
+	float: right;
+}
+.wk_regist_upload>div input[type=text]{border: none;color: #666;font-size: 15px;}
+.wk_regist_upload>div span{
+	display: inline-block;
+	width: 140px;
+	padding-bottom: 10px;
+	border-bottom: 1px solid #ccc;
+}
+.wk_regist_upload>div span:after{
+	content: ">";
+	float: right;
+}
+.wk_regist_upload_select{margin-left: 20px;}
+.wk_regist_upload>div label+input{margin-left: 120px;}
+.wk_regist_upload>div input[type=radio]{margin-right: 10px;}
+.wk_regist_upload>div p{
+	width: 200px;
+	height: 50px;
+	background: #1B6D85;
+	position: absolute;
+	margin-top: 0;
+	top:-31px;
+	right: -200px;
+	font-size: 12px;
+	color: #fff;
+	line-height: 50px;
+	font-weight: 100;
+	display: none;
+}
+.wk_regist_upload>div a{background: orange;}
+
+
+
+
+
+/*王坤 end*/
+
+/*李莎 start*/
+/*todo*/
+.L-banner{
+	width: 100%;
+	height: 150px;
+}
+.L-help{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+}
+.L-help section{
+	padding-top: 2%;
+	line-height: 30px;
+	color: #626262;
+}
+.L-help section div{
+	font-size: 18px;
+}
+.L-help section:nth-child(2) div:last-child{
+	padding-top:15px ;
+}
+.L-help section:nth-child(3) div:last-child{
+	padding-top:15px ;
+}
+.L-help section p{
+	padding: 2% 0;
+	color: #000000;
+	font-size: 18px;
+	font-weight: bold;
+}
+.L-nav{
+	max-width: 1080px;
+	width: 100%;
+    height: 50px;
+    margin: 0 auto;
+}
+.L-nav ul{
+	list-style: none;
+    line-height: 88px;
+   	background-color: #FFFFFF;
+	
+}
+.L-nav ul li{
+	float:left;
+	text-align: center;
+	width: 10%;
+	height: 50px;
+}
+.L-nav ul li a{
+	line-height: 50px;
+	font-size: 18px;
+	display: block;
+}
+.L-nav ul li:nth-child(1) a{
+	color: #E63F00;
+}
+.L-nav ul li:nth-child(1){
+	border-bottom: 3px solid #ea5504;
+}
+
+.L-contact{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+    border: 1px solid #F3F1EE;
+}
+.L-contact section{
+	padding-top: 2%;
+	line-height: 30px;
+	color: #626262;
+}
+.L-contact section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-contact section:nth-child(2) p:last-child span{
+	color: #626262;
+	font-weight: bold;
+}
+.L-contact2{
+	width: 100%;
+	max-width: 1080px;
+    margin: 0 auto;
+}
+.L-contact2 section{
+	padding-top: 2%;
+	line-height: 30px;
+	color: #626262;
+}
+.L-contact2 section:first-child p{
+	color: #000000;
+	font-weight: bold;
+}
+.L-left{
+	float: left;
+	width: 50%;
+}
+.L-left section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-left section span{
+	color: #ec4c15;
+}
+.L-right section p:first-child{
+	color: #000000;
+	font-weight: bold;
+}
+.L-right section{
+	margin-top: -1%;
+}
+.L-contact2 h3{
+	color: #ec4c15;
+}
+/*李莎 end*/
+
+/*胡启文 start*/
+
+/*公共头部*/
+#PubilcHeader{
+    width: 100%;
+    border: none;
+}
+.h_PublicHeader{
+    display: flex;
+    width: 100%;
+    max-width: 1080px;
+	min-width: 720px;
+    height: 88px;
+    margin: 0 auto;
+    line-height: 88px;
+}
+.h_PublicHeader div{
+    flex: 1;
+    margin: 0 15px;
+}
+
+.h_PuHe_btn{
+    display: block;
+    float: right;
+    width: 88px;
+    height: 32px;
+    margin-top:  28px;
+    line-height: 32px;
+    text-align: center;
+    color: #ea5504;
+    border: 1px solid #ea5504;
+    border-radius: 5px;
+}
+
+/*公共尾部*/
+.h_PublicFooter{
+	width: 100%;
+	height: 186px;
+	padding: 0 15px;
+	color: #999;
+	background-color: #f7f7f7;
+}
+.h_PublicFooter >div{
+	display: flex;
+	max-width: 1080px;
+	min-width: 720px;
+	margin: 0 auto;
+
+}
+.h_PublicFooter > div > div:nth-child(1){
+	flex: 3;
+}
+.h_PublicFooter > div > div:nth-child(2){
+	flex: 2;
+}
+.h_PuFo_InFo{
+	padding: 43px 0;
+
+}
+.h_PuFo_Info{
+	display: flex;
+	width: 100%;
+	max-width: 640px;
+	margin-bottom: 10px;
+}
+.h_PuFo_InFo p{
+	height: 25px;
+	line-height: 25px;
+	font-size: 14px;
+}
+.h_PuFo_Info a{
+	display: block;
+	flex: 1;
+	color: #999;
+
+}
+.h_PuFo_Img{
+	text-align: center;
+}
+.h_PuFo_Img p{
+	height: 36px;
+	line-height: 36px;
+	text-align: center;
+}
+.h_PuFo_Img div{
+	float: right;
+	width: 100px;
+	height: 136px;
+	margin-right:30px;
+	padding-top: 25px;
+	/*flex: 1;*/
+}
+.h_PuFo_trust{
+	height: 100%;
+	padding-left: 30px;
+}
+/*胡启文 end*/
